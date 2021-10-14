@@ -1,6 +1,8 @@
+import Heading from "../../components/Heading"
+
 const Contacts = () => (
 	<>
-		<h1>Contacts lists</h1>
+		<Heading text="Contacts lists"></Heading>
 	</>
 )
 

@@ -1,7 +1,9 @@
+import Heading from "../components/Heading"
+
 const Error = () => (
 	<>
-		<h1>404</h1>
-		<p>Something is going wrong</p>
+		<Heading text="404"></Heading>
+		<Heading tag="h2" text="Something is going wrong"></Heading>
 	</>
 )
 
