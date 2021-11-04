@@ -22,6 +22,7 @@ export type socialsType = {
   icon: string
   path: string
   map: any
+  socials: any
 }
 
 export type headingType = {
