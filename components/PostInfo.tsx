@@ -1,6 +1,12 @@
+import { FC } from "react"
+import { postType } from "../types"
 import Heading from "./Heading"
 
-const PostInfo = ({ post }) => {
+type postInfoProps = {
+  post: postType
+}
+
+const PostInfo: FC<postInfoProps> = ({ post }) => {
   const { title, body } = post || {}
 
   if (!post) {
@@ -10,9 +16,7 @@ const PostInfo = ({ post }) => {
   return (
     <>
       <Heading tag="h3" text={title}></Heading>
-      <div>
-        {body}
-      </div>
+      <div>{body}</div>
     </>
   )
 }
